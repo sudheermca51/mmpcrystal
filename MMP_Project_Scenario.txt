@@ -1,0 +1,84 @@
+Test Steps: Send MEssages Scenario 
+Patient URL :http://85.209.95.122/MMP-Release2-Integrated-Build.6.8.000/portal/login.php
+ria1/Ria12345
+Admin URL : http://85.209.95.122/MMP-Release2-Admin-Build.2.1.000/login.php
+Ben@123/Frank@123
+1. Login to Patient Portal
+2. Click on MEssages module.
+3. Send Message with contact reason.
+4. Click on accept in the alert box.
+5. Login to Admin Portal 
+6. Click on message module.
+7. validate the message send by the patient details are dispalyed in the table.
+
+Expected Result:
+HashMap
+date: getfutureDate("dd-MM-yyyy");
+Patient name:Click on Profile fetch patient name 
+Contact Reason: enter and store 
+Subject: enter and store 
+
+
+Actual Result:
+HashMap 
+Contact Reason
+Subject
+date
+Patient name
+--------------------------------------
+Test Steps: Search Symptoms Tab 
+1. Click on Search Symptoms Tab.
+2. Enter valid symptoms details: cold 
+3. validate the data displayed in matching with the symptom details. 
+
+
+Expected Result : 
+cold should be displayed in the table. 
+
+Actual Result:
+cold should be displayed in the table. 
+
+Scenario 2:
+1. Click on Information Tab.
+2. Enter valid symptoms details: invalid data  
+3. validate the data displayed in matching with the symptom details. 
+
+
+Expected Result : 
+no rows are  displayed in the table. 
+
+Actual Result:
+no rows are displayed in the table.
+-----------------------------------------------------------
+Test Scenario: Information
+
+1. Click on information tab.
+2. Validate the text displayed is matching with Expected. 
+
+Expected Text="Manage My Patient (MMP) is a medical practice management solution that boosts productivity by automating the day-to-day tasks that can slow an office manager down. Central delivers much more than medical billing software. Sure, it has the tools to help generate cleaner claims and reduce denials, but our easy-to-use practice management software also streamlines your workflow to deliver seamless handoffs across departments.
+
+    Manage My Patient (MMP) becomes your practice’s command center, delivering robust, real-time analytics through customizable reports and dashboards to ensure you know how your business is performing on the metrics that matter most."
+	
+Actual Text
+
+Note: Maintain the text in a text file and compare with Actual Text.
+-----------------------------------------------------------------
+Test Scenario: Pay Fees
+Entry Point: Admin module 
+1. Login to PAtient Portal.
+2. Login to Admin Module.
+2. Click on Patients.
+3. Enter SSN.
+4. Click on create Fee.
+5. Login to PAtient Portal 
+6. Access the fee module. 
+7. validate the entry in the patient portal 
+
+Expected Result :
+
+Amount,Reason 
+
+
+Actual Result 
+Amount,Reason 
+-----------------------------------------------------------------------------
