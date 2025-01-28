@@ -1,0 +1,71 @@
+Execute the scenario manually and make a note of the steps. 
+
+Code Review:
+1. Coding/Naming conventions
+2. Locators
+3. Invoke Custom Methods
+4. ARe you parameterizing the methods
+5. Avoid hard cording of username/password/url- xml/excel/db/properties/json
+6. Avoid Thread.sleep add explicit wait statements
+7. Page object methods should return values.
+
+
+Debugging:
+--------------
+Exception - handle 
+Syso -properties 
+Breakpoint
+Thread.sleep
+
+driver.get("patient_url");
+perform steps in patient module
+
+Exception :
+
+
+prop: Property File
+
+key,value 
+
+prop.getProperty("admin_url");
+
+
+MMPLibrary
+	Collection of resuable methods 
+	
+	
+10 Testcases :
+	launchbrowser
+	login
+	logout
+	navigation
+
+String methods:
+
+String str;
+trim(),length,split,equals,contains,chartAt(),concat,subString,replace
+
+
+10 Modules 
+
+<input type="submit" value="Sign In" name="admin">
+<input type="submit" value="Sign In" name="submit">
+
+Xpath:
+//input[@value='Sign In']
+
+driver.findElement(By.xpath("//input[@value='Sign In']")).click();
+
+
+ 
+
+String str="Hello Good Evening!! Shwetha";
+
+String strArray[]= str.split("");
+
+Admin Module 
+Select : vaccination 
+Date:    date 
+Fees:    fee
+
+//li[text(),'vaccination 08/23/2023:  $11')]
